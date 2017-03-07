@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	width:100vw;
+	height:100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo{
+	display: flex;
+	flex-direction: row;
+
+	font-size:60px;
+	font-weight: bold;
+}
+
+.you{
+	letter-spacing: -3px;
+}
+
+.tube{
+	letter-spacing: -4px;
+}
+
+.tube{
+	display: inline-block;
+	color:white;
+	text-shadow:0 2px #000;
+	position:relative;
+	text-align: center;
+}
+
+.destaque{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position:relative;
+
+	border-radius:15px;
+	margin-left:10px;
+	background:linear-gradient(to top, #bf392b 60%, #e74c3c 90%);
+	width:140px;
+	height:70px;
+
+}
+
+.destaque:before, .destaque:after{
+	content:"";
+	position:absolute;
+	width:87%;
+	height:10px;
+	border-radius:80%;
+}
+
+.destaque:before{
+	left:9px;
+	top:-3px;
+
+	background:linear-gradient(to top, #e74c3c 90%, #bf392b 60%);
+}
+
+.destaque:after{
+	background:linear-gradient(to bottom, #bf392b 80%, #e74c3c 90%);
+	bottom:-3px;
+	left:9px;
+}
+
+.tube:before , .tube:after{
+	content:"";
+	width:10px;
+	height:71%;
+	display: block;
+	position:absolute;
+	border-radius: 40%;
+}
+
+.tube:before{
+	left:-14px;
+	top:11px;
+	background:linear-gradient(to top, #bf392b 60%, #e74c3c 110%);
+}
+
+.tube:after{
+	top:11px;
+	right:-14px;
+	background:linear-gradient(to top, #bf392b 60%, #e74c3c 110%);
+}
